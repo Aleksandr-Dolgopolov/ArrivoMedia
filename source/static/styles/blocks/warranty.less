@@ -1,0 +1,124 @@
+// Warranty
+
+.warranty {
+  padding-top: 200px;
+
+  background-color: @yellow;
+  background-image: url("../images/content/interface.png");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: 45%;
+}
+
+.warranty__wrapper {
+  display: flex;
+}
+
+.warranty__mobile {
+  position: relative;
+  margin-left: 60px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -100px;
+    left: 0;
+
+    width: 106px;
+    height: 114px;
+
+    background: url("../images/content/звездочка 1.png") no-repeat center left / 100% 100%;
+  }
+}
+
+.warranty__block {
+  margin-left: 115px;
+  padding-top: 110px;
+}
+
+.warranty__title {
+  font-weight: 900;
+  font-size: 42px;
+  line-height: 44px;
+  color: @white;
+}
+
+.warranty__text {
+  font-weight: 900;
+  font-size: 18px;
+  line-height: 20px;
+
+  text-transform: uppercase;
+  color: @white;
+
+  &--number {
+    font-weight: 500;
+    font-size: 130px;
+    line-height: 135px;
+  }
+}
+
+@media (max-width: 1199px) {
+
+  .warranty {
+    background-size: 55%;
+  }
+
+  .warranty__block {
+    margin-left: 0px;
+  }
+
+  .warranty__title {
+    font-size: 32px;
+  }
+}
+
+@media (max-width: 991px) {
+
+  .warranty {
+    background-size: 55%;
+    background-position: center top;
+  }
+
+  .warranty__block {
+    margin-left: 0px;
+    padding-top: 70px;
+  }
+
+  .warranty__title {
+    font-size: 32px;
+  }
+}
+
+@media (max-width: 767px) {
+
+  .warranty {
+    background-size: 55%;
+    background-position: center top;
+  }
+
+  .warranty__block {
+    margin-left: 0px;
+    padding-top: 70px;
+  }
+
+  .warranty__title {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .warranty__text {
+    font-weight: 900;
+    font-size: 16px;
+    line-height: 20px;
+
+    text-transform: uppercase;
+    color: @white;
+
+    &--number {
+      font-weight: 500;
+      font-size: 40px;
+      line-height: 50px;
+    }
+  }
+}

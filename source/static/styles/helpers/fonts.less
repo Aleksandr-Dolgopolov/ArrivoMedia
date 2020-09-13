@@ -1,0 +1,13 @@
+.font-face(@font-name, @path, @weight: normal, @style: normal) {
+  @font-face {
+    font-family: quote(@font-name);
+    src: url("@{path}.woff") format("woff"),
+    url("@{path}.woff2") format("woff2"),
+    url("@{path}.ttf") format("truetype");
+    font-weight: @weight;
+    font-style: @style;
+  }
+}
+
+.font-face('Roboto', '../fonts/roboto-300', 300, normal);
+.font-face('Roboto', '../fonts/roboto-900', 900, normal);

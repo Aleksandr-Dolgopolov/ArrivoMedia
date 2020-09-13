@@ -1,0 +1,60 @@
+// Works
+
+.works {
+  padding-top: 150px;
+}
+
+.works__title {
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 45px;
+  color: @dark-grey;
+}
+
+.works__text {
+  padding-bottom: 20px;
+
+  font-weight: 300;
+  font-size: 13.5px;
+  line-height: 19px;
+}
+
+.works__subtitle {
+  position: relative;
+  padding-left: 57px;
+
+  font-size: 16px;
+  line-height: 20px;
+  color: @dark-grey;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: 0;
+
+    width: 40px;
+    height: 40px;
+
+    background: url("../images/content/Logo-Color-AM-jpg 1.png") no-repeat left top / cover;
+  }
+}
+
+@media (max-width: 1199px) {
+  .works__text {
+    display: block;
+    width: 500px;
+  }
+
+  .works__subtitle {
+    padding-bottom: 50px;
+  }
+
+  .works__ipad {
+    display: block;
+    width: 700px;
+  }
+}

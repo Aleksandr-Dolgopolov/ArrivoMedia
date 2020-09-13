@@ -1,0 +1,105 @@
+// About
+
+.about {
+  padding-top: 48px;
+}
+
+.about__welcome {
+  padding-bottom: 15px;
+
+  text-align: right;
+}
+
+.about__caption {
+  padding-bottom: 10px;
+}
+
+.about__title {
+  padding-bottom: 10px;
+
+  font-weight: 900;
+  font-size: 58px;
+  line-height: 63px;
+  color: @dark-grey;
+
+  text-transform: uppercase;
+}
+
+.about__text {
+  padding-bottom: 40px;
+
+  font-weight: 300;
+  font-size: 22px;
+  line-height: 28px;
+}
+
+.about__desktop {
+  position: relative;
+  padding-top: 52px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -10px;
+
+    width: 82px;
+    height: 70px;
+
+    background: url("../images/content/сердечко 1.png") no-repeat;
+    background-size: 90% 90%;
+  }
+}
+
+@media (max-width: 1200px) {
+  .about__welcome {
+    text-align: center;
+  }
+
+  .about__block {
+    text-align: center;
+  }
+
+  .about__desktop {
+    padding-top: 81px;
+
+    &::before {
+      display: none;
+      top: 30px;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: -40px;
+      left: 0px;
+
+      width: 131px;
+      height: 243px;
+
+      background: url("../images/content/телефон-первый экран 2.png") no-repeat center left / 60% 60%;
+    }
+  }
+}
+
+@media (max-width: 991px) {
+  .about__welcome {
+    text-align: center;
+  }
+
+  .about__block {
+    text-align: center;
+  }
+
+  .about__desktop {
+    padding-top: 81px;
+
+    &::before {
+      display: block;
+    }
+
+    &::after {
+      background-size: 100% 100%;
+    }
+  }
+}
